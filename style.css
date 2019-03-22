@@ -1,0 +1,501 @@
+ /* ================================================================
+ Student Name: Edward Mc Evoy
+ Student Number: 10722103
+ Course: HDip in Computer Science
+
+ This website has been constructed as an assignment on the 
+ WIT Computer Science HDip course. The brief was to create 
+ a website on an area of interest. I chose to this topic 
+ because I am a qualified electrician.
+================================================================== */
+
+ /* ============================================== 
+               CSS 12 Column Grid 
+================================================= */
+
+/* include the padding and border in the total width and height of an element */
+* {
+    box-sizing: border-box;
+}
+
+/* used to clear floating elements */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* all cols float to the left and have 15px padding */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* defines the widths in percentages for each col size */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+ /* ============================================== 
+               Global CSS Styles
+================================================= */
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin: 0px;
+}
+
+section{
+  padding-left:50px;
+  padding-right:50px;
+}
+
+article.main-content{
+  padding-left: 50px;
+  padding-right:50px;
+  text-align:center;
+}
+
+.video-container{
+  text-align:center;
+}
+
+iframe, object, embed {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ------------------------ heading styles ------------------- */
+
+h1.section-heading{
+  font-family:'Lato', sans-serif;
+  font-size: 40px;
+  font-weight:300;
+  margin-top: 0px;
+  text-align:center;
+}
+
+h1{
+  font-family:'Lato', sans-serif;
+  font-size: 24px;
+  font-weight:300;
+}
+
+h2{
+  font-family:'Lato', sans-serif;
+  font-size: 22px;
+  font-weight:300;
+}
+
+h3{
+  font-family:'Lato', sans-serif;
+  font-size: 20px;
+  font-weight:300;
+}
+
+h4{
+  font-family:'Lato', sans-serif;
+  font-size: 18px;
+  font-weight:300;
+}
+
+/* ------------------- paragraph styles ------------------- */
+
+.lead{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+
+.highlighted{
+  background-color:#004056;
+  border-radius: 5px;
+  color:#ffffff;
+  padding:30px;
+}
+
+.note {
+  background-color:#f4f4f4;
+  padding:30px;
+  text-align:center;
+}
+
+.demo-text{
+  text-align:center;
+}
+
+/* --------------------- button styles ---------------------- */
+
+a.button{
+  background-color: #e5654a; 
+  border: none;
+  color:#ffffff;
+  font-size: 18px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none; 
+}
+
+a.button:hover{
+  background-color: #004056; 
+}
+
+/* ---------------------- image container ---------------------- */
+
+.img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center; /* align horizontal */ 
+}
+
+/* ============================================== 
+               Header Styles  
+================================================= */
+
+header{
+  background-color: #004056;
+  border-bottom: 5px solid #e5654a;
+  height: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+header img {
+  padding: 0px;
+}
+
+/* ============================================== 
+                Navigation Styles
+================================================= */
+
+nav {
+  margin-top: 60px;
+}
+
+ul#menu {
+  list-style: none;
+  margin: 0;
+}
+
+ul#menu li {
+  display: inline;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+ul#menu li.current a {
+  color: #e5654a;
+}
+
+ul#menu li a {
+  color: #ffffff;
+  padding: 15px 20px;
+  text-decoration: none; 
+  text-transform: uppercase;
+}
+
+ul#menu li a:hover {
+  background-color: #ffffff;
+  color: #e5654a;
+}
+
+/* ============================================== 
+                Mobile Navigation Styles
+================================================= */
+
+/* ----------------- only displays on mobile devices --------------- */
+
+div.overlay{
+  background-color:#004056;
+  position:absolute;
+  top:0px;
+  left:0px;
+  text-align:center;
+  z-index:1;
+}
+
+a.logo img{
+  z-index:2;
+}
+
+nav.overlay-menu {
+  height: 100%;
+  width: 100%;
+  margin:0px auto;
+  position: relative;
+  z-index: 2; 
+}
+
+ul#mobile-menu{
+  display:block;
+  list-style: none;
+  margin: 0px auto;
+  text-align:left;
+  width:100%;
+}
+
+ul#mobile-menu li {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  margin-bottom:5px;
+}
+
+ul#mobile-menu li a {
+  color: #ffffff;
+  margin-bottom:10px;
+  padding: 0px;
+  text-decoration: none; 
+  text-transform: uppercase;
+}
+
+ul#mobile-menu li a:hover {
+  color: #e5654a;
+}
+
+ul#mobile-menu li.current a {
+  color: #e5654a;
+}
+
+
+/* ============================================== 
+                Home Page Styles
+================================================= */
+
+/* -------------- Banner Image ----------------*/
+
+section#banner-image{
+  background-image: url("./images/banner-electrician.png"); 
+  background-size: cover;
+}
+
+#banner-image{
+  height: 60%;
+  margin-top: -20px;
+  width: 100%;
+}
+
+div#banner-text{
+  background-color:rgba(80,80,80,0.3);
+  color: #ffffff;
+  padding: 30px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+div#banner-text p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+/* -------------- Main Content ----------------*/
+
+section#home-main-content{
+  text-align: center;
+}
+
+/* ============================================== 
+                About Us Styles
+================================================= */
+
+#about-primary{
+  margin-top: 0px;
+}
+
+ul.icon-ul{
+  font-size:16px;
+  list-style: none;
+  text-align:left;
+}
+
+section#callout{
+	background-color:#0079A2;
+	color:#ffffff;
+	padding-left:50px;
+	padding-right:50px;
+	text-align:center;
+}
+
+.callout-text h1, .callout-btn h1{
+  font-size:36px;
+}
+
+.callout-text p, .callout-btn p{
+   font-size:24px;
+}
+
+.callout-btn a{
+	margin-top:25px;
+}
+
+
+/* ============================================== 
+                Contact Us Styles
+================================================= */
+
+input[type=text], select, textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    padding: 12px;
+    resize: vertical;
+    width: 100%;
+}
+
+input[type=submit] {
+    background-color: #e5654a;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 12px 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contact-ul{
+  font-size:24px;
+  list-style: none;
+}
+
+#contact-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-bottom:20px;
+  padding: 20px;
+}
+
+
+/* ============================================== 
+                Residential Pages Styles
+================================================= */
+
+ul.icon-ul li{
+  margin-bottom:5px;
+}
+/* ============================================== 
+                Footer Styles
+================================================= */
+
+footer{
+	background-color: #28282a;
+	color: #ffffff;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+footer .section-title{
+	text-align: center;
+}
+
+footer div.footer-section{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin-top:0px;
+  text-align: center;
+}
+
+footer p.lead{
+  font-size: 14px;
+  text-align: center;
+}
+
+footer hr{
+	width:50%;
+}
+
+/* ============================================== 
+         Media Queries for Mobile Phones
+================================================= */
+
+@media only screen and (max-width: 768px) {
+
+    /* ---- For mobile phones: ---- */
+    [class*="col-"] {
+        width: 100%;
+      }
+
+    /* ---- increase the height of the header on mobile devices  ---- */
+    header{
+      height: 260px;
+      margin-bottom: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    /* ---- hide the normal menu and display the overlay menu ---- */
+    nav{
+      display:block;
+      visibility:hidden;
+    }
+
+    div.overlay{
+      display:block;
+      visibility:visible;
+    }
+
+    nav.overlay-menu {
+      display:block;
+      visibility:inherit;
+    }
+    
+    ul#mobile-menu, ul#mobile-menu li, ul#mobile-menu li a {
+      display:block;
+      visibility:inherit;
+    }
+
+    /* ---- change the settings of the banner image and banner text ---- */
+     #banner-image{
+       height: 60%;
+       margin-top: -20px;
+       width: 100%;
+    }
+  
+    div#banner-text{
+      padding: 20px;
+      position: absolute;
+      top: 85%;
+      left: 50%;
+    }
+
+    div.main-heading{
+      margin-top:-100px;
+    }
+
+    /* ---- change the font size of the ul on the Contact Us page ----- */
+    .contact-ul{
+      font-size:12px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+   
+   /* ---- Hide the overlay menu on screen sizes over 768px ---- */
+    div.overlay{
+      display:none; /* Used this as the element is removed from the page and not just hidden */
+    }  
+
+}

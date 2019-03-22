@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Contact Us</title>
+  </head>
+  <body>
+
+   <header> 
+      <div class="row"> <!-- open row -->
+
+        <!-- /////////////////////////////// logo ///////////////////////////////////////// -->
+        <div class="col-2">
+             <a href="index.html"><img src = "./images/mcevoy-logo-sm.png" alt="Mc Evoy Electrical Services"/></a>
+        </div>
+        <!-- /////////////////////////////// navigation /////////////////////////////////// -->
+        <div class="col-10">
+          <nav>
+              <ul id="menu">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="about.html">About</a></li>
+                <li class="menu-item"><a href="residential.html">Residential</a></li>
+                <li class="menu-item"><a href="commercial.html">Commercial</a></li>
+                <li class="menu-item"><a href="industrial.html">Industrial</a></li>
+                <li class="current menu-item"><a href="contact.html">Contact Us</a></li>
+              </ul>
+          </nav>
+        </div>
+        </div> <!-- close row -->     
+                
+        <!-- /////////////////////////////// mobile navigation /////////////////////////////////// -->
+        <div class="row"> <!-- open row -->
+            <div class="overlay col-12">
+               <a class="logo" href="index.html"><img src = "./images/mcevoy-logo-xs.png" alt="Mc Evoy Electrical Services"/></a>
+                <nav class="overlay-menu">
+                   <ul id="mobile-menu">
+                          <li class="menu-item"><a href="index.html">Home</a></li>
+                          <li class="menu-item"><a href="about.html">About</a></li>
+                          <li class="menu-item"><a href="residential.html">Residential</a></li>
+                          <li class="menu-item"><a href="commercial.html">Commercial</a></li>
+                          <li class="menu-item"><a href="industrial.html">Industrial</a></li>
+                          <li class="current menu-item"><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                </nav>
+            </div>
+        </div> <!-- close row -->
+
+    </header>
+
+    <section id="contact-main-content">
+      <div class="row">
+    
+         <div id="contact-primary" class="col-8">
+            
+            <div class="section-title main-heading col-12">
+                <h1 class="section-heading">Lets Work Together</h1>
+            </div>
+
+                <p class="lead">
+                  If you are looking for an electrician in Kilkenny or surrounding counties and would like to arrange for a free no obligation quotation or for any other enquiry please feel free to contact us today.
+                </p>
+                <p class="lead highlighted">
+                  All of our quotations are free and come with no obligation. We are happy to discuss any project large or small. Our team of dedicated professionals have many years of industry experience and are able to cater for all types of projects, big or small.
+                </p>
+                
+                <div class="section-title col-12">
+                    <h1 class="section-heading">Always Use Registered Contractors</h1>
+                </div>
+
+                <div class="video-container" class=col-8>
+                  <p class="lead">
+                    "You should ALWAYS use a Registered Electrical Contractor (REC) to carry out electrical work in your home and ask for a Completion Certificate after the work is complete."
+                    .... Safe Electric 
+                  </p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/oApVVJNUfd8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+         </div>
+
+       <!-- /////////////////////////////// enquiry form /////////////////////////////////// -->
+          <div id="contact-form" class="col-4">
+
+                  <div class="section-title col-12">
+                    <h1 class="section-heading">Contact Details</h1>
+                </div>
+    
+                  <ul class="lead contact-ul">
+                    <li><i class="fa fa-phone" aria-hidden="true"></i></i> 085 8072815</li>
+                    <li><i class="fa fa-home" aria-hidden="true"></i></i> Cuffesgrange, Kilkenny</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i> info@mcevoyelectrical.ie</li>
+                  </ul>
+
+                <div class="section-title col-12">
+                    <h1 class="section-heading">Enquiries</h1>
+                </div>
+
+                <form action="./form-action.html">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    <label for="lname">Email</label>
+                    <input type="text" id="email" placeholder="Email address.." name="mail" required>
+
+                    <label for="country">County</label>
+                    <select id="country" name="county">
+                      <option value="kilkenny">Kilkenny</option>
+                      <option value="carlow">Carlow</option>
+                      <option value="dublin">Dublin</option>
+                      <option value="kildare">Kildare</option>
+                      <option value="tipperary">Tipperary</option>
+                      <option value="waterford">Waterford</option>
+                      <option value="wexford">Wexford</option>
+                      <option value="wicklow">Wicklow</option>
+                      <option value="other">Other</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Nature of Enquiry" style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+          </div>
+      </div> <!-- close row -->
+    </section>
+    
+    <!-- /////////////////////////////// footer /////////////////////////////////// -->
+    <footer id="footer">
+      <div class="row"> <!-- open row -->
+          <div class="footer-section col-4">
+              <h1>Find Us</h1>
+              <hr>
+              <p class="lead">Cuffesgrange</p>
+              <p class="lead">Kilkenny City</p>
+              <p class="lead">Ireland</p>
+          </div>
+       
+          <div class="footer-section col-4">
+              <h1>Services</h1>
+              <hr>
+              <p class="lead">Domestic Installations</p>
+              <p class="lead">Commercial Installations</p>
+              <p class="lead">Industrial Installations</p>
+              <p class="lead">Servicing &amp; Repair</p>
+              <p class="lead">Maintenance</p>
+          </div>
+
+          <div class="footer-section col-4">
+              <h1>Members</h1>
+              <hr>
+              <img src = "./images/reci-logo.png" alt="Registered Electrical Contractors Ireland Logo"/>
+          </div>
+      </div> <!-- close row -->
+    </footer>
+
+  </body>
+</html>
